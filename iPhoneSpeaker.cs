@@ -4,15 +4,15 @@ using System.Runtime.InteropServices;
 
 public class iPhoneSpeaker : MonoBehaviour 
 {
-	[DllImport("__Internal")]
-	private static extern void _forceToSpeaker();
+    [DllImport("__Internal")]
+    private static extern void _forceToSpeaker();
 	
-	public static void ForceToSpeaker() 
+    public static void ForceToSpeaker() 
     {
-	    if (Application.platform == RuntimePlatform.IPhonePlayer) 
+        if (Application.platform == RuntimePlatform.IPhonePlayer) 
         {
-		    _forceToSpeaker();
-	    }   
+            _forceToSpeaker();
+        }   
     }
 }
 #endif
