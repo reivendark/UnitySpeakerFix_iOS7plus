@@ -12,16 +12,14 @@ void _forceToSpeaker()
     BOOL success;
     NSError *error;
 
-    success = [session setCategory:AVAudioSessionCategoryPlayAndRecord
-                             error:&error];
+    success = [session setCategory:AVAudioSessionCategoryPlayAndRecord error:&error];
 
     if (!success)
     {
         NSLog(@"AVAudioSession error setting category:%@",error);
     }
 
-    success = [session overrideOutputAudioPort:AVAudioSessionPortOverrideSpeaker
-                                         error:&error];
+    success = [session overrideOutputAudioPort:AVAudioSessionPortOverrideSpeaker error:&error];
     if (!success)
     {
         NSLog(@"AVAudioSession error overrideOutputAudioPort:%@",error);
