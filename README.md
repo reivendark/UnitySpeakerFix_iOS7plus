@@ -1,6 +1,6 @@
 # Unity Speaker Fix iOS 7+
 
-**Unity** switches audio output in some **iOS7+** devices to the *earpiece speaker*, instead of the usual *speakerphone speaker*. As a result, all the audio in game becomes very quiet. Tested on iPhone 5S and iPhone 6S plus. Successfully used by G.H.O.R. Corporation for  MMO mobile tank game **Tanktastic 2.0**
+**Unity** switches audio output in some **iOS7+** devices to the *earpiece speaker*, instead of the usual *speakerphone speaker*. As a result, all the audio in game becomes very quiet.
 
 #How-To
 
@@ -15,6 +15,8 @@ iPhoneSpeaker.ForceToSpeaker();
 ```
 
 somewhere on application start and after every call of ```Microphone.Start```
+
+Tested on iPhone 5S and iPhone 6S plus. Successfully used by G.H.O.R. Corporation for  MMO mobile tank game **Tanktastic 2.0**
 
 #Credit
 
